@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 public class Kingdom implements Serializable {
     @Expose
-    private String id;
+    private int id;
 
     @Expose
     private String name;
@@ -34,11 +34,11 @@ public class Kingdom implements Serializable {
         this.climate = climate;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

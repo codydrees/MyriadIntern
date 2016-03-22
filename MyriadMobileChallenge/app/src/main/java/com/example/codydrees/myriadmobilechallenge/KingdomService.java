@@ -13,6 +13,6 @@ public interface KingdomService {
     @GET("/api/v1/kingdoms/")
     Call<List<Kingdom>> getAllKingdoms();
 
-
-
+    @GET("/api/v1/kingdoms/{id}")
+    Call<KingdomInfo> getKingdom(@Path("id") int id);
 }

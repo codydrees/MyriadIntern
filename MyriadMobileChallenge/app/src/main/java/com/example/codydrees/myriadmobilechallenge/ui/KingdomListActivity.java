@@ -3,23 +3,10 @@ package com.example.codydrees.myriadmobilechallenge.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-
-import com.example.codydrees.myriadmobilechallenge.Constants;
-import com.example.codydrees.myriadmobilechallenge.Kingdom;
-import com.example.codydrees.myriadmobilechallenge.KingdomAdapter;
-import com.example.codydrees.myriadmobilechallenge.R;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.Button;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.codydrees.myriadmobilechallenge.Constants;
 import com.example.codydrees.myriadmobilechallenge.Kingdom;
@@ -36,7 +23,7 @@ import retrofit.Retrofit;
 /**
  * Created by Cody Drees on 3/13/2016.
  */
-public class SignUpActivity extends AppCompatActivity implements KingdomAdapter.KingdomClickListener{
+public class KingdomListActivity extends AppCompatActivity implements KingdomAdapter.KingdomClickListener{
 
     private RestManager mManager;
     private RecyclerView mRecyclerView;
@@ -110,7 +97,7 @@ public class SignUpActivity extends AppCompatActivity implements KingdomAdapter.
     @Override
     public void onClick(int position){
         Kingdom selectedKingdom = mKingdomAdapter.getSelectedKingdom(position);
-        Intent intent = new Intent(SignUpActivity.this, KingdomActivity.class);
+        Intent intent = new Intent(KingdomListActivity.this, KingdomActivity.class);
         intent.putExtra(Constants.REFERENCE.KINGDOM, selectedKingdom);
         startActivity(intent);
     }

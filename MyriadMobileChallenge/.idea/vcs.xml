@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
-    <mapping directory="C:\Users\Cody Drees\Desktop\MyriadIntern\MyriadMobileChallenge\Internship" vcs="Git" />
-    <mapping directory="C:\Users\Cody Drees\Desktop\MyriadIntern\MyriadMobileChallenge\InternshipChallenge" vcs="Git" />
-    <mapping directory="C:\Users\Cody Drees\Desktop\MyriadIntern\MyriadMobileChallenge\Myriad-Mobile-Internship" vcs="Git" />
+    <mapping directory="" vcs="" />
   </component>
 </project>
